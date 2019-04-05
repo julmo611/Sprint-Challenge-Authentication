@@ -56,10 +56,20 @@ following free-form questions. Edit this document to include your answers after
 each question. Make sure to leave a blank line above and below your answer so it
 is clear and easy to read by your project manager.
 
-1. What is the purpose of using _sessions_?
-1. What does bcrypt do to help us store passwords in a secure manner.
-1. What does bcrypt do to slow down attackers?
-1. What are the three parts of the JSON Web Token?
+1. What is the purpose of using _sessions_? \*\*\* Son una forma sencilla de
+   almacenar datos para usuarios con único ID de sesión. Esto se puede utilizar
+   para mantener la información de autenticación entre página.
+
+2. What does bcrypt do to help us store passwords in a secure manner. \*\*\*
+   Bcrypt is a hashing system, it's claimed advantage being you can store the
+   iteration count with the salt and base hash, allowing you to increase it
+   later and still maintain backward compatibility with earlier stored hashes.
+
+3. What does bcrypt do to slow down attackers? \*\*\* The system waiting after
+   it knows you failed to login, to slow attackers down.
+
+4. What are the three parts of the JSON Web Token? \*\*\* Header - Payload -
+   Signature
 
 ## Project Set Up
 
@@ -74,27 +84,27 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] `cd` into the root of the project and run `yarn` to install dependencies.
-- [ ] Once you have your `node_modules` go ahead and run `yarn server` or
+- [x] `cd` into the root of the project and run `yarn` to install dependencies.
+- [x] Once you have your `node_modules` go ahead and run `yarn server` or
       `npm run server` to start your node server.
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master
       (student's Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by merging the branch back into master.
+- [x] Add your Project Manager as a Reviewer on the Pull-request
+- [x] PM then will count the HW as done by merging the branch back into master.
 
 Helpful Tip on Testing this Project:
 
-- [ ] **TEST** this project using **`POSTMAN`**.
+- [x] **TEST** this project using **`POSTMAN`**.
 
 ## Minimum Viable Product
 
-- [ ] Implement the `register` function inside `/config/routes.js`.
-- [ ] Implement the `login` function inside `/config/routes.js`.
-- [ ] Use JSON Web Tokens for authentication.
+- [x] Implement the `register` function inside `/config/routes.js`.
+- [x] Implement the `login` function inside `/config/routes.js`.
+- [x] Use JSON Web Tokens for authentication.
 
 **Note** The migrations and a database with empty users is already included
 
-- [ ] Add the authentication related code. If everything is done correctly,
+- [x] Add the authentication related code. If everything is done correctly,
       visiting `/api/jokes` should return a list of jokes.
 
 ## Stretch Problem: Build a front end to interface with your User Auth System
