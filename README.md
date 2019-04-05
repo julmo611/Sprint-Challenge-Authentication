@@ -56,9 +56,9 @@ following free-form questions. Edit this document to include your answers after
 each question. Make sure to leave a blank line above and below your answer so it
 is clear and easy to read by your project manager.
 
-1. What is the purpose of using _sessions_? \*\*\* Son una forma sencilla de
-   almacenar datos para usuarios con único ID de sesión. Esto se puede utilizar
-   para mantener la información de autenticación entre página.
+1. What is the purpose of using _sessions_? \*\*\* They are a simple way to
+   store data for users with unique session IDs. This can be used to keep the
+   authentication information between pages.
 
 2. What does bcrypt do to help us store passwords in a secure manner. \*\*\*
    Bcrypt is a hashing system, it's claimed advantage being you can store the
